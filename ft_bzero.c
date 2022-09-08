@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/05 21:14:11 by coder             #+#    #+#             */
-/*   Updated: 2022/09/08 17:39:48 by ado-prad         ###   ########.fr       */
+/*   Created: 2022/09/08 19:42:21 by ado-prad          #+#    #+#             */
+/*   Updated: 2022/09/08 22:19:59 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,16 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	int i;
+	size_t i;
 
 	i = 0;
 	while (i < n)
 	{
-		((unsigned char *)s[i] != '\0')
+		((unsigned char *)s)[i] = '\0';
+		i++;
 	}
+	return (*s);
 }
 
 
-//  The bzero() function writes n zeroed bytes to the string s.  If n is
-//      zero, bzero() does nothing.
+//  A função bzero() escreve n bytes zerados na string s. Se n for zero, bzero() não faz nada.

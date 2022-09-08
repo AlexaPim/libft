@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/05 21:23:11 by coder             #+#    #+#             */
-/*   Updated: 2022/09/05 22:21:16 by coder            ###   ########.fr       */
+/*   Created: 2022/09/08 20:38:21 by ado-prad          #+#    #+#             */
+/*   Updated: 2022/09/09 00:12:52 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strnstr(const char *haystack, const char *needle, size_t len);
+char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	
+}
 

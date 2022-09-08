@@ -3,31 +3,66 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: coder <coder@student.42.fr>                +#+  +:+       +#+         #
+#    By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/09/05 17:13:30 by coder             #+#    #+#              #
-#    Updated: 2022/09/06 17:14:17 by coder            ###   ########.fr        #
+#    Created: 2022/09/08 20:26:28 by ado-prad          #+#    #+#              #
+#    Updated: 2022/09/09 00:33:28 by ado-prad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME: libft.a
-
-all: $(NAME)
-
-$(NAME):
-	gcc -o $(NAME) 
+NAME = libft.a
 
 FLAGS = -Wall\
 		-Wextra\
 		-Werror
 
-SRC = ft_isalpha.c
+SRC = ft_bzero.c\
+ft_isalnum.c\
+ft_isalpha.c\
+ft_isascii.c\
+ft_isprint.c\
+ft_isdigit.c\
+ft_strlen.c \
+ft_tolower.c\
+ft_toupper.c\
+ft_strchr.c\
+ft_strrchr.c\
+ft_strncmp.c\
+ft_putchar_fd.c\
+ft_putstr_fd.c\
+ft_strdup.c\
 
-OBJ = $(SRC:.c=*.o)
+#ft_memset.c\
+
+
+#ft_atoi.c\
+# ft_calloc\
+# ft_itoa.c\
+# ft_memchr.c\
+# ft_memcmp.c\
+# ft_memcpy.c\
+# ft_memmove.c\
+# ft_putendl_fd.c\
+# ft_putnbr_fd.c\
+# ft_split.c\
+# ft_striteri.c\
+# ft_strjoin.c\
+# ft_strlcat.c\
+# ft_strlcpy.c\
+# ft_strmapi.c\
+# ft_strnstr.c\
+# ft_strtrim.c\
+# ft_substr.c\
+
+OBJ = $(SRC:.c=.o)
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	ar -rc $(NAME) $(OBJ)
 
 $(OBJ): $(SRC)
 	gcc $(FLAGS) -c $(SRC)
-ft_arquivos.o (arquivos compilados)
 
 clean: 
 	rm -f $(OBJ)

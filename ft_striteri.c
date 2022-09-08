@@ -5,10 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/08 17:23:33 by coder             #+#    #+#             */
-/*   Updated: 2022/09/08 17:31:37 by ado-prad         ###   ########.fr       */
+/*   Created: 2022/09/08 19:44:19 by ado-prad          #+#    #+#             */
+/*   Updated: 2022/09/08 19:44:30 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void ft_striteri(char s, void (f)(unsigned int, char*))
 {

@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/05 21:18:54 by coder             #+#    #+#             */
-/*   Updated: 2022/09/06 22:42:38 by ado-prad         ###   ########.fr       */
+/*   Created: 2022/09/08 20:25:36 by ado-prad          #+#    #+#             */
+/*   Updated: 2022/09/08 20:25:39 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 
 // The isdigit() function tests for a decimal digit character.  Regardless
@@ -24,13 +25,12 @@ int	ft_isdigit(int c)
 	return (c >= '0' && c <= '9');
 }
 
-#include <stdio.h>
 
-int	main()
-{
-	char x;
+// int	main()
+// {
+// 	char x;
 	
-	x = 1;
-	printf("%d", ft_isdigit(x));
-	return (0);
-}
+// 	x = 1;
+// 	printf("%d", ft_isdigit(x));
+// 	return (0);
+// }
