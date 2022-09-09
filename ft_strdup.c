@@ -6,15 +6,11 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 19:43:24 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/08 20:01:30 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/09 23:27:01 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
-
-size_t	ft_strlen(const char *s);
 
 char *ft_strdup(const char *s)
 {

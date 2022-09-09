@@ -6,13 +6,13 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 20:38:21 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/09 00:12:52 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/09 22:00:25 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+char *ft_strnstr(const char	*big, const char *little, size_t len)
 {
 	
 }

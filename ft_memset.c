@@ -6,22 +6,23 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 19:42:47 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/08 23:50:54 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/09 22:08:47 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_memset(void *b, int c, size_t len)
+void *ft_memset(void *s, int c, size_t n)
 {
-	// while (len--)
-	// 	((unsigned char *)b + len) = c;
-	// return (b);
-	while (len--)
+	size_t i;
+
+	i = 0;
+	while (i < n)
 	{
-		((unsigned char *)b + len) = (unsigned char)c;
+		((unsigned char *)s)[i] = c;
+		i++;
 	}
-	return (b);
+	return (s);
 }
 
 
