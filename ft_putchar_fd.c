@@ -6,13 +6,13 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 20:05:51 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/09 00:19:36 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/13 21:16:28 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }

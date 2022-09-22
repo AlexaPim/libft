@@ -6,13 +6,21 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 19:44:19 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/08 19:44:30 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/14 21:41:16 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_striteri(char s, void (f)(unsigned int, char*))
+void	ft_striteri(char *s,
+	void (*f)(unsigned int, char*))
 {
-	
+	int	i;
+
+	i = 0;
+	while (s[i] != 0)
+	{
+		(*f)(i, s + i);
+		i++;
+	}
 }

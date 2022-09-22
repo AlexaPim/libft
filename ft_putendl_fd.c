@@ -6,8 +6,14 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 20:37:21 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/08 20:41:27 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/13 21:16:50 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putendl_fd(char *s, int fd)
+{
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
+}

@@ -6,14 +6,40 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 19:45:05 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/08 19:45:08 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/20 21:22:31 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str);
+static int	ft_isspace(int c)
+{
+	if (c == ' ' || c == '\n' || c == '\t' || c == '\r'
+		|| c == '\f' || c == '\v')
+		return (1);
+	return (0);
+}
 
-// The atoi() function converts the initial portion of the string pointed to
-//      by str to int representation.
+int	ft_atoi(const char *str)
+{
+	int	num;
+	int	sign;
 
+	while ((ft_isspace(*str)))
+		str++;
+	sign = 1;
+	if (*str == '+' || *str == '-')
+	{
+		if (*str == '-')
+			sign = -1;
+		str++;
+	}
+	num = 0;
+	while ((ft_isdigit(*str)))
+	{
+		num = num * 10;
+		num = num + sign * (*str - 48);
+		str++;
+	}
+	return (num);
+}

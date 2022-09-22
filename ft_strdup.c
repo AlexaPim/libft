@@ -6,13 +6,13 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 19:43:24 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/09 23:27:01 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/13 21:20:28 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	int		size;
 	char	*string;

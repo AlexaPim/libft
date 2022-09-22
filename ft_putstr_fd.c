@@ -6,15 +6,15 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 19:42:06 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/09 00:31:10 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/13 21:18:48 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-	int i;
+	int	i;
 
 	if (s != NULL)
 	{
