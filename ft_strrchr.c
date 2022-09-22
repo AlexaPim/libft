@@ -6,7 +6,7 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 20:38:31 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/19 23:24:22 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/22 20:48:21 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,18 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	x;
+	size_t	len;
 
-	x = ft_strlen(s);
-	while (x + 1)
+	len = ft_strlen(s);
+	if (s == NULL)
+		return (NULL);
+	while (s[len] != (unsigned char)c && len > 0)
 	{
-		if (s[x] == (char)c)
-			return ((char *)&s[x]);
-		x--;
+		len--;
 	}
-	return (0);
+	if (s[len] == (unsigned char)c)
+	{
+		return ((char *)s + len);
+	}
+	return (NULL);
 }
