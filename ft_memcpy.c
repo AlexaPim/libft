@@ -6,7 +6,7 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 20:36:57 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/20 19:43:27 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/22 18:44:17 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// DESCRIPTION
-//      The memcpy() function copies n bytes from memory area src to memory area
-//      dst.  If dst and src overlap, behavior is undefined.  Applications in
-//      which dst and src might overlap should use memmove(3) instead.
-
-// RETURN VALUES
-//      The memcpy() function returns the original value of dst.

@@ -6,7 +6,7 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 20:36:40 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/20 19:24:38 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/22 19:36:23 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t i;
-	
+	size_t	i;
+
 	i = 0;
 	while (i < n)
 	{
