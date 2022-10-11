@@ -6,7 +6,7 @@
 #    By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/08 20:26:28 by ado-prad          #+#    #+#              #
-#    Updated: 2022/09/19 20:11:47 by ado-prad         ###   ########.fr        #
+#    Updated: 2022/09/28 02:36:44 by ado-prad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,4 +68,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all	
+
 

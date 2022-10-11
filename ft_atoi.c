@@ -6,7 +6,7 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 19:45:05 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/20 21:22:31 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/09/23 19:46:15 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	ft_atoi(const char *str)
 	while ((ft_isdigit(*str)))
 	{
 		num = num * 10;
-		num = num + sign * (*str - 48);
+		num = num + sign * (*str - '0');
 		str++;
 	}
 	return (num);
