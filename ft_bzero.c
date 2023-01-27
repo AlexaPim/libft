@@ -6,7 +6,7 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 19:42:21 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/09/13 21:29:20 by ado-prad         ###   ########.fr       */
+/*   Updated: 2023/01/27 20:32:45 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ void	ft_bzero(void *s, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		((unsigned char *)s)[i] = '\0';
+		((char *)s)[i] = '\0';
 		i++;
 	}
-	return (*s);
 }
